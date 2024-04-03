@@ -1,0 +1,79 @@
+body {
+    font-family: 'Reddit Mono', monospace;
+}
+
+.game-wrapper {
+    padding: 80px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+}
+
+.gallows {
+    min-width: 40%;
+    position: relative;
+}
+
+.hangman-elements {
+    position: absolute;
+    width: 155px;
+    left: 226px;
+    top: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallows-title {
+    margin-top: 30px;
+    font-size: 64px;
+}
+
+.answer-tab {
+    font-size: 32px;
+    font-weight: 600;
+    min-width: 40%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.answer-letters {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.letter {
+    font-size: 86px;
+}
+
+.hint,
+.incorrect-guesses,
+.virtual-keyboard {
+    margin-top: 40px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.key {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: rgb(106, 90, 205);
+    border-radius: 20%;
+}
+
+.text-hightlight {
+    color: rgb(255, 69, 0);
+}
