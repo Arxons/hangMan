@@ -78,9 +78,22 @@ body {
     color: #fff;
     background-color: rgb(106, 90, 205);
     border-radius: 20%;
+    cursor: pointer;
 }
 
-.text-hightlight {
+.key:hover {
+    opacity: 0.4;
+}
+
+.key.blocked {
+    opacity: 0.4;
+}
+
+.key.correct {
+    background-color: rgb(50, 205, 50);
+}
+
+.text-highlight {
     color: rgb(255, 69, 0);
 }
 
