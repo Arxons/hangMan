@@ -3,15 +3,21 @@ body {
 }
 
 .game-wrapper {
-    padding: 80px;
+    height: 100vh;
+    padding: 40px;
     display: flex;
     gap: 60px;
     justify-content: space-around;
+    align-items: center;
 }
 
 .gallows {
+    text-align: center;
     min-width: 40%;
-    position: relative;
+}
+
+.gallows-image {
+    width: 90%;
 }
 
 .hangman-elements {
@@ -28,6 +34,7 @@ body {
 .gallows-title {
     margin-top: 30px;
     font-size: 64px;
+    text-align: center;
 }
 
 .answer-tab {
@@ -35,7 +42,6 @@ body {
     font-weight: 600;
     min-width: 40%;
     text-align: center;
-    padding-top: 80px;
 }
 
 .answer-letters {
@@ -68,7 +74,7 @@ body {
 }
 
 .key {
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: #fff;
     background-color: rgb(106, 90, 205);
     border-radius: 20%;
@@ -76,4 +82,80 @@ body {
 
 .text-hightlight {
     color: rgb(255, 69, 0);
+}
+
+@media (max-width: 1250px) {
+    .gallows-title {
+        font-size: 48px;
+    }
+
+    .key {
+        padding: 0;
+        width: 10%;
+    }
+
+    .letter {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 950px) {
+    .game-wrapper {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .gallows-title {
+        font-size: 32px;
+    }
+
+    .answer-tab {
+        font-size: 26px;
+    }
+
+    .hint,
+    .incorrect-guesses,
+    .virtual-keyboard {
+        margin-top: 20px;
+    }
+
+    .letter {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 820px) {
+    .game-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .key {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .key {
+        width: 10%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .gallows-title {
+        font-size: 28px;
+    }
+
+    .gallows-image {
+        width: 70%;
+    }
+
+    .answer-tab {
+        font-size: 20px;
+    }
+
+    .letter {
+        font-size: 32px;
+    }
 }
